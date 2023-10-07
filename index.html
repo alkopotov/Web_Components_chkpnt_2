@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Финансовый калькулятор</title>
+  <script src="components/financial-calculator.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <financial-calculator sum="2000"></financial-calculator>
+  <script>
+    const input = document.createElement('input');
+    input.type = 'number'
+
+    const result = document.createElement('p')
+
+    input.oninput = () => result.innerText = input.value;
+    document.body.append(input, result);
+  </script>
+</body>
+</html>
