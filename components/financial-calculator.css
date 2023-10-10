@@ -1,13 +1,48 @@
-form {
+.wrapper {
+  width: 800px;
+  padding: 20px;
+  margin: auto;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  border: ridge 3px gray;
+  border-radius: 5px;
+}
+
+form {
+  max-width: fit-content;
+  display: flex;
+  gap: 15px;
 }
 
 label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  text-align: center;
+  gap: 5px;
 }
 input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   text-align: end;
+}
+
+h3 {
+
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.number_display {
+  text-decoration: none;
+  font-size: 24px;
+  background-color: none;
+  letter-spacing: 0.6px;
 }

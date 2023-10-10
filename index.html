@@ -9,14 +9,5 @@
 </head>
 <body>
   <financial-calculator sum="2000"></financial-calculator>
-  <script>
-    const input = document.createElement('input');
-    input.type = 'number'
-
-    const result = document.createElement('p')
-
-    input.oninput = () => result.innerText = input.value;
-    document.body.append(input, result);
-  </script>
 </body>
 </html>
